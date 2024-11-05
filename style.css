@@ -1,0 +1,44 @@
+html, body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: #f2ce16;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 20px;
+}
+
+.row {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    width: 100%;
+    border-bottom: solid 1px #bbb;
+    padding: 1.5em 0;
+}
+
+.label {
+    font-size: 0.8em;
+    padding: 0;
+    margin: 0;
+    text-transform: uppercase;
+}
+
+.value {
+    margin-top: 0.5em;
+    margin-bottom: 0;
+    font-size: 1.3em;
+}
+
+#qrcode {
+    background-color: white;
+    padding: 15px;
+    border-radius: 10px;
+    margin-top: 1.5em;
+}
