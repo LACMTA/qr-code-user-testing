@@ -40,5 +40,24 @@ html, body {
     background-color: white;
     padding: 15px;
     border-radius: 10px;
-    margin-top: 1.5em;
+    margin-top: 3em;
+}
+
+#footer-image {
+    margin-top: 3em;
+    width: 100%;
+    height: 300px;
+
+    background: url('train.png');
+    background-position-x: center;
+    background-position-y: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* if screen is smartphone sized, apply different height to #footer-image */
+@media (max-width: 600px) {
+    #footer-image {
+        height: 200px;
+    }
 }
