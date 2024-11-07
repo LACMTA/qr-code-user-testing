@@ -6,24 +6,24 @@ fetch(tapQRCodeURL)
         let qrCode = data.code
         console.log(qrCode);
 
-        // get url param 'size' if it exists
-        const queryString = window.location.search;
-        const urlParams = new URLSearchParams(queryString);
-        const sizeParam = urlParams.get('size');
-        console.log(sizeParam);
+        // // get url param 'size' if it exists
+        // const queryString = window.location.search;
+        // const urlParams = new URLSearchParams(queryString);
+        // const sizeParam = urlParams.get('size');
+        // console.log(sizeParam);
 
-        if (sizeParam != null) {
-            new QRCode(document.getElementById("qrcode"), {
-                text: qrCode,
-                width: sizeParam,
-                height: sizeParam
-            });
-        } else {
-            // default size is 256x256
-            new QRCode(document.getElementById("qrcode"), {
-                text: qrCode
-            });
-        }
+        // if (sizeParam != null) {
+        //     new QRCode(document.getElementById("qrcode"), {
+        //         text: qrCode,
+        //         width: sizeParam,
+        //         height: sizeParam
+        //     });
+        // } else {
+        //     // default size is 256x256
+        //     new QRCode(document.getElementById("qrcode"), {
+        //         text: qrCode
+        //     });
+        // }
         
         let canvas = bwipjs.toCanvas('aztecCode', {
             bcid:        'azteccode',       // Barcode type
