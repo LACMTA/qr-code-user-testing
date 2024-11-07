@@ -25,6 +25,15 @@ fetch(tapQRCodeURL)
             });
         }
         
+        let canvas = bwipjs.toCanvas('aztecCode', {
+            bcid:        'azteccode',       // Barcode type
+            text:        qrCode,    // Text to encode
+            scale:       3,               // 3x scaling factor
+            //height:      10,              // Bar height, in millimeters
+            includetext: true,            // Show human-readable text
+            textxalign:  'center',        // Always good to set this
+        });
+
     })
     .catch(error => {
         console.error(error);
